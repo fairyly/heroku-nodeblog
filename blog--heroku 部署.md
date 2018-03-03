@@ -1,5 +1,7 @@
 # blog--heroku 部署
 
+* 已经部署到 heroku: https://desolate-coast-83590.herokuapp.com/posts
+
 * mongodb 数据库申请 [MLab](https://mlab.com/)
   - 创建数据、用户名和密码，最后得到连接
   ```
