@@ -103,7 +103,7 @@ web: npm run heroku
 ```
 Procfile 文件告诉 Heroku 该使用什么命令启动一个 web 服务。更多信息见：https://devcenter.heroku.com/articles/getting-started-with-nodejs。
 
-然后输入以下命令：
+如果当前项目没有初始化 git ,然后输入以下命令：
 ```
 git init
 heroku git:remote -a 你的应用名称
@@ -111,13 +111,21 @@ git add .
 git commit -am "init"
 git push heroku master
 ```
-在当前项目时候,
+如果已经在 git 版本库中,在当前项目时候,使用
 ```
-3. heroku create, 这时候，heroku 会为我们随机取一个应用名字，并提供一个 git 仓库给我们。
-4. git remote -v
-5. git push heroku master
-6. heroku open  打开项目，则 heroku 会自动打开浏览器带我们去到相应的网址
+1. heroku create, 这时候，heroku 会为我们随机取一个应用名字，并提供一个 git 仓库给我们。
+2. git remote -v
+3. git push heroku master
+4. heroku open  打开项目，则 heroku 会自动打开浏览器带我们去到相应的网址
 ```
+如果已经部署过,修改是在另一台电脑时候,使用
+```
+heroku login
+heroku git:remote -a 你的应用名称
+git push heroku master
+heroku open  打开项目，则 heroku 会自动打开浏览器带我们去到相应的网址
+```
+
 稍后，就部署成功了。使用：
 
 heroku open
