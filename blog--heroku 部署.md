@@ -111,6 +111,13 @@ git add .
 git commit -am "init"
 git push heroku master
 ```
+在当前项目时候,
+```
+3. heroku create, 这时候，heroku 会为我们随机取一个应用名字，并提供一个 git 仓库给我们。
+4. git remote -v
+5. git push heroku master
+6. heroku open  打开项目，则 heroku 会自动打开浏览器带我们去到相应的网址
+```
 稍后，就部署成功了。使用：
 
 heroku open
